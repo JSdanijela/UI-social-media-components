@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@100;200;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+button:focus{
+outline: none;
+}
+
+button:hover{
+cursor: pointer;
+}
+
+input:focus{
+    outline: none;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+#left, #right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+}
+
+
+/*/////////////STATUS////////////////*/
+
+#status{
+    width: 350px;
+    height: 290px;
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    border-radius: 25px;
+    box-shadow: 6px 6px 10px gray;
+}
+
+#person img{
+    border-radius: 50%;
+}
+
+#person{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.1fr;
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 5%;
+    color: white;
+}
+
+#person h4{
+    margin-top: 5%;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+#person i{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#status article {
+    width: 80%;
+    margin-left: 10%;    
+margin-top: 15px;
+color: rgba(255, 255, 255, 0.8);
+font-weight: 200;
+}
+
+#comm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 15px;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+#comm i{
+    font-size: 18px;
+}
+
+
+/*//////////////ADD STATUS///////////////*/
+
+
+#addStatus{
+    width: 350px;
+    height: 80px;
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    border-radius: 15px;
+    box-shadow: 6px 6px 10px gray;
+}
+
+#addStatus ul{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.1fr;
+    list-style: none;
+    padding-top: 15px;
+    width: 84%;
+    margin-left: 8%;
+}
+
+#addStatus img{
+    border-radius: 50%;
+}
+
+
+
+#addStatus ul input{
+    background: none;
+    color: white;
+    border:none;
+    border-bottom: 1px solid white;
+    margin-top: 17px;
+    width: 170px;
+    padding: 2px 0px;
+}
+
+#addStatus input::placeholder{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+#addStatus button{
+    color: white;
+    background:none;
+    border:none;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/**************MINI PROFILE******************/
+
+#miniProfile{
+    width: 350px;
+    height: 80px;
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    border-radius: 15px;
+    box-shadow: 6px 6px 10px gray;
+    color: white;
+}
+
+#miniProfile ul{
+    display: grid;
+    grid-template-columns: 0.4fr 1.3fr 0.1fr;
+    list-style: none;
+    margin-top: 15px;
+    width: 84%;
+    margin-left: 8%;
+}
+
+#miniProfile img{
+    border-radius: 50%;
+}
+
+#miniProfile h3{
+ margin-top: 5px;
+}
+
+#miniProfile i{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#miniProfile h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+#miniProfile h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+#friend-list{
+    width: 250px;
+    height: 200px;
+    background-color: red;;
+}
+
+/*********************FOLLOWERS*************/
+
+#followers{
+    width: 350px;
+    height: 250px;
+    display: inline-grid;
+    grid-template-rows: 0.4fr 1fr 0.6fr;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 6px 6px 10px gray;
+    
+}
+
+#title{
+    padding: 20px 0px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#followers button{
+ width: 90%;
+ margin-left: 5%;
+ margin-bottom: 20px;
+ padding: 10px 0px;
+ border: none;
+ color:white;
+ background-color: #045de9;
+ background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+ border-radius: 5px;
+ font-family: 'Raleway', sans-serif;
+ font-weight: bold;
+}
+
+#followers ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#followers li{
+    display: inline-grid;
+    text-align: center;
+}
+
+#followers img{
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#followers ul h4{
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: -15px;
+    font-weight: bold;
+}
+
+/**************Suggestion*************************/
+
+#suggestion{
+    display: inline;
+    width: 350px;
+    height: 300px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 6px 6px 10px gray;
+}
+#suggestion h5{
+    margin: 15px 0px 5px 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#suggestion ul{
+    height: 86%;
+    width: 90%;
+    margin-left: 9%;
+    overflow-y: scroll;
+}
+
+#suggestion img{
+    border-radius: 50%;
+}
+
+#suggestion li{
+ display: grid;
+ grid-template-columns: 0.3fr 0.5fr 0.2fr;
+ margin: 15px 0px;
+ padding: 10px 5px;
+ border-radius: 15px;
+}
+
+#suggestion li:hover{
+    cursor: pointer;
+}
+
+#suggestion i{
+    background: -webkit-linear-gradient(#045de9, #09c6f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+#suggestion h4{
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+#suggestion ul::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  #suggestion ul::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  #suggestion ul::-webkit-scrollbar-thumb {
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    border-radius: 10px;
+  }
+  
+
+
+  @media only screen and (max-width: 800px) {
+    body{
+        width: 100vw;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around
+  }
+ #left, #right{
+     height: 100%;
+     margin: 3% 0%;
+ }
+
+#suggestion, #addStatus {
+    margin: 5% 0%;
+}
+}
